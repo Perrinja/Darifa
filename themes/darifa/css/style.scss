@@ -1,3 +1,9 @@
 body{
     background-color: red;
 }
+
+//Style for sidebar_first region
+.sidebar_first{
+    display: flex;
+    flex-direction: column;
+}

@@ -72,6 +72,16 @@
 {# page-container #}
 <div class="page-container">
 
+  {% if page.sidebar_first %}
+    <aside class="col-3">
+      {# sidebar-first #}
+      <section class="sidebar_first">
+        {{ page.sidebar_first }}
+      </section>
+      {# EOF:sidebar-first #}
+    </aside>
+  {% endif %}
+
   {% if page.header_top_first or page.header_top_second or page.header_first or page.header or page.header_third or page.header_top_highlighted_first or page.header_top_highlighted_second %}
     {# header-container #}
     <div class="header-container">
