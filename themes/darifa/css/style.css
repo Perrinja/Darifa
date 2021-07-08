@@ -15,15 +15,19 @@ h1, h2, h3, h4, h5 {
   padding: 0 5%;
 }
 
-.sidebar_first {
+.sidebar_first, .sidebar_second {
   -webkit-box-flex: 0 !important;
       -ms-flex: 0 0 16.666667% !important;
           flex: 0 0 16.666667% !important;
   max-width: 16.666667% !important;
 }
 
-.sidebar_first a {
+.sidebar_first a, .sidebar_second a {
   color: black;
+}
+
+.sidebar_first .block-views, .sidebar_second .block-views {
+  background-color: white;
 }
 
 .view-content {
@@ -64,7 +68,9 @@ h1, h2, h3, h4, h5 {
 
 .node--view-mode-teaser .node__content .image-style-large {
   width: 100%;
-  height: auto;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .node--view-mode-teaser .node-readmore {
