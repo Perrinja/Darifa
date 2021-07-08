@@ -181,6 +181,7 @@ h1, h2, h3, h4, h5 {
   /* Underline of the title in node full view and font family*/
   font-family: 'Satisfy', cursive;
   border-bottom: solid;
+  font-size: 2.5rem;
 }
 
 .content .node--type-post .node__content .field--name-field-categoria .field__item, .content .node--type-post .node__content .field--name-field-palabras-clave .field__item {
