@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .node--view-mode-teaser .node-readmore {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   background-color: #505050;
   border-radius: 20px;
 }
@@ -83,11 +85,14 @@ h1, h2, h3, h4, h5 {
   color: white;
 }
 
-.node--view-mode-teaser .node-readmore :hover {
+.node--view-mode-teaser .node-readmore:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #505050;
   background-color: white;
 }
 
-.node--view-mode-teaser .node-readmore :hover a {
+.node--view-mode-teaser .node-readmore:hover a {
   color: #505050;
 }
 
@@ -115,7 +120,9 @@ h1, h2, h3, h4, h5 {
   border: none;
 }
 
-.pagination .page-link :hover {
+.pagination .page-link:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #505050;
   background-color: white;
 }

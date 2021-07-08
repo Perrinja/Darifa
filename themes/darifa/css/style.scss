@@ -56,17 +56,22 @@ h1, h2, h3, h4, h5 {
         }
     }
     .node-readmore{
-        a{
-            color: white;
-        }
+        transition: 0.2s;
         background-color: #505050;
         border-radius: 20px;
 
-        :hover{
-            background-color: white;
-            a{
-                color: #505050;
-            }
+        a{
+            color: white;
+        }
+    }
+
+    .node-readmore:hover{
+        transition: 0.2s;
+        border: 1px solid #505050;
+        background-color: white;
+
+        a{
+            color: #505050;
         }
     }
 }
@@ -90,9 +95,11 @@ h1, h2, h3, h4, h5 {
         color: white;
         background-color: #505050;
         border: none;
-        :hover{
-            color:#505050;
-            background-color:white;
-        }
     }   
+
+    .page-link:hover{
+        transition: 0.2s;
+        color:#505050;
+        background-color:white;
+    }
 }
