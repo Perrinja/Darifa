@@ -8,9 +8,24 @@
 .header{
     a{
         font-family: 'Satisfy', cursive;
+        font-size: 1.5rem;
         color: white;
     }
+    .navbar{
+        .row{
+            .block{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            padding-left: 45vw;
+                        }
+                    }
+                }
+           }
+        }
+    }
 }
+
 
 a:hover{
     color: black;
