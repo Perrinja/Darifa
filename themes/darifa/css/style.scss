@@ -240,3 +240,26 @@ h1, h2, h3, h4, h5 {
         border: 1px solid #505050;
     }
 }
+
+//Style for user account form
+.form-control{
+    background-color: #D7D7D7 !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+}
+
+//Style for user account submit button
+.btn-primary{
+    transition: 0.2s;
+    color: white;
+    background-color: #505050;
+    border: 1px solid #505050;
+    border-radius: 20px;
+}
+
+.btn-primary:hover{
+    transition: 0.2s;
+    color:#505050;
+    background-color:white;
+    border: 1px solid #505050;
+}

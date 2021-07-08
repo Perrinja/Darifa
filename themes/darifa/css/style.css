@@ -238,4 +238,27 @@ h1, h2, h3, h4, h5 {
   background-color: white;
   border: 1px solid #505050;
 }
+
+.form-control {
+  background-color: #D7D7D7 !important;
+  border-radius: 20px !important;
+  padding: 10px !important;
+}
+
+.btn-primary {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: white;
+  background-color: #505050;
+  border: 1px solid #505050;
+  border-radius: 20px;
+}
+
+.btn-primary:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #505050;
+  background-color: white;
+  border: 1px solid #505050;
+}
 /*# sourceMappingURL=style.css.map */
