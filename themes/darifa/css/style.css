@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5 {
   color: white;
 }
 
+.content .title .field--name-title {
+  border-bottom: solid;
+}
+
 @media (min-width: 560px) {
   .node .field--type-image {
     float: none !important;
