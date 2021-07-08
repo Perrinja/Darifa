@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap");
 .header .navbar-expand-lg {
+  /* Hides the non used navbar */
   display: none;
 }
 
 .header a {
+  /* Sets the default font family, color and size */
   font-family: 'Satisfy', cursive;
   font-size: 1.5rem;
   color: white;
@@ -21,6 +23,10 @@
 a:hover {
   color: black;
   text-decoration: none;
+}
+
+.region-top-header-form .block-menu .nav .nav-link:hover {
+  color: white;
 }
 
 .dialog-off-canvas-main-canvas {
@@ -132,6 +138,10 @@ h1, h2, h3, h4, h5 {
 
 .node--view-mode-teaser .node-readmore:hover a {
   color: #505050;
+}
+
+.content div .view-categorias .view-content .views-row .views-field .field-content, .content div .view-content-recent .view-content .views-row .views-field .field-content, .content div .view-related-post .view-content .views-row .views-field .field-content {
+  /* Fix the blue color on the hover */
 }
 
 .content div .view-categorias .view-content .views-row .views-field .field-content a:hover, .content div .view-content-recent .view-content .views-row .views-field .field-content a:hover, .content div .view-related-post .view-content .views-row .views-field .field-content a:hover {

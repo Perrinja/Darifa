@@ -3,9 +3,11 @@
 
 .header{
     .navbar-expand-lg{
+        /* Hides the non used navbar */
         display: none;
     }
     a{
+        /* Sets the default font family, color and size */
         font-family: 'Satisfy', cursive;
         font-size: 1.5rem;
         color: white;
@@ -33,6 +35,16 @@
 a:hover{
     color: black;
     text-decoration: none;
+}
+
+.region-top-header-form{
+    .block-menu{
+        .nav{
+            .nav-link:hover{
+                color: white;
+            }
+        }
+    }
 }
 
 .dialog-off-canvas-main-canvas {
@@ -136,6 +148,7 @@ h1, h2, h3, h4, h5 {
                 .views-row{
                     .views-field{
                         .field-content{
+                            /* Fix the blue color on the hover */
                             a:hover{
                                 color: black;
                             }
