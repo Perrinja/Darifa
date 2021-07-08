@@ -32,14 +32,13 @@ h1, h2, h3, h4, h5 {
 
 .node--view-mode-teaser{
     
-    
-    
     .node__title{
         text-align: center;
     }
     
     .node__content{
         display: flex;
+        flex-direction: column;
         justify-content: center;
 
         .image-style-large{
