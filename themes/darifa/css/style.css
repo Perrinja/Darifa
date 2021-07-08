@@ -98,6 +98,14 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
+.node--view-mode-teaser .node__title a {
+  /* Underline of the title in node full view */
+}
+
+.node--view-mode-teaser .node__title a .field--name-title {
+  border-bottom: solid;
+}
+
 .node--view-mode-teaser .node__content {
   display: -webkit-box;
   display: -ms-flexbox;
