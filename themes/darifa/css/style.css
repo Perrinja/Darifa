@@ -117,14 +117,33 @@ h1, h2, h3, h4, h5 {
   color: #505050;
 }
 
-.content .node--type-post .node__content .field--name-field-categoria .field__item:hover .field__item:hover {
+.content .node--type-post .node__content .field--name-field-categoria {
+  /* Style for Category title on full node view*/
+  /* Style for Category title hover on full node view*/
+}
+
+.content .node--type-post .node__content .field--name-field-categoria .field__item {
+  display: block;
+  padding: .5rem 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #505050;
+  border: 1px solid #505050;
+  border-radius: 20px;
+}
+
+.content .node--type-post .node__content .field--name-field-categoria .field__item a {
+  color: white;
+}
+
+.content .node--type-post .node__content .field--name-field-categoria .field__item:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border: 1px solid #505050;
   background-color: white;
 }
 
-.content .node--type-post .node__content .field--name-field-categoria .field__item:hover .field__item:hover a {
+.content .node--type-post .node__content .field--name-field-categoria .field__item:hover a {
   color: #505050;
 }
 
@@ -141,13 +160,13 @@ h1, h2, h3, h4, h5 {
           justify-content: center;
 }
 
-.content .title {
+.content .node--type-post .title {
   /* Center the title of node full view */
   text-align: center;
   /* Underline of the title in node full view */
 }
 
-.content .title .field--name-title {
+.content .node--type-post .title .field--name-title {
   border-bottom: solid;
 }
 

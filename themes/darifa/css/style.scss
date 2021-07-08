@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5 {
         .node__content{
             .field--name-field-categoria{
                 /* Style for Category title on full node view*/
-                .field__item:hover{
+                .field__item{
                     display: block;
                     padding: .5rem 1rem;
                     transition: 0.2s;
@@ -125,9 +125,9 @@ h1, h2, h3, h4, h5 {
                         a{
                             color: #505050;
                         }
-                    }
                 }
             }
+        
 
             .field--type-image{
                 /* Style for images inside node full view */
@@ -137,17 +137,18 @@ h1, h2, h3, h4, h5 {
                 }
             }
         }
-    }
-    .title{ 
-        /* Center the title of node full view */
-        text-align: center;
-        
-        /* Underline of the title in node full view */
-        .field--name-title{
-            border-bottom: solid;
+        .title{ 
+            /* Center the title of node full view */
+            text-align: center;
+            
+            /* Underline of the title in node full view */
+            .field--name-title{
+                border-bottom: solid;
+            }
         }
-  }
+    }
 }
+
   
 
 @media (min-width: 560px){
