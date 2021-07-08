@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5 {
   color: #505050;
 }
 
-.content div .view-categorias .view-content .views-row .views-field .field-content a:hover {
+.content div .view-categorias .view-content .views-row .views-field .field-content a:hover, .content div .view-content-recent .view-content .views-row .views-field .field-content a:hover, .content div .view-related-post .view-content .views-row .views-field .field-content a:hover {
   color: black;
 }
 
