@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5 {
           justify-content: center;
 }
 
-.node--view-mode-teaser .node .field--type-image {
+.node--view-mode-teaser .node__content .field--type-image {
   float: none;
 }
 
