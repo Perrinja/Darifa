@@ -83,10 +83,40 @@ h1, h2, h3, h4, h5 {
   color: white;
 }
 
+.node--view-mode-teaser .node-readmore :hover {
+  background-color: white;
+}
+
+.node--view-mode-teaser .node-readmore :hover a {
+  color: #505050;
+}
+
 @media (min-width: 560px) {
   .node .field--type-image {
     float: none !important;
     margin: 0 !important;
   }
+}
+
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: white;
+  background-color: #505050;
+  border: none;
+}
+
+.pagination .page-link :hover {
+  color: #505050;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -61,6 +61,13 @@ h1, h2, h3, h4, h5 {
         }
         background-color: #505050;
         border-radius: 20px;
+
+        :hover{
+            background-color: white;
+            a{
+                color: #505050;
+            }
+        }
     }
 }
 
@@ -69,4 +76,23 @@ h1, h2, h3, h4, h5 {
         float: none !important;
         margin: 0 !important;
     }
+}
+
+.pagination {
+    justify-content: center;
+
+    .page-link {
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: white;
+        background-color: #505050;
+        border: none;
+        :hover{
+            color:#505050;
+            background-color:white;
+        }
+    }   
 }
