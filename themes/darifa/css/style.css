@@ -134,6 +134,10 @@ h1, h2, h3, h4, h5 {
   color: #505050;
 }
 
+.content div .view-categorias .view-content .views-row .views-field .field-content a:hover {
+  color: black;
+}
+
 .content .node--type-post .node__content .field--name-field-categoria, .content .node--type-post .node__content .field--name-field-palabras-clave {
   /* Style for Category title on full node view*/
   /* Style for Category title hover on full node view*/
