@@ -119,6 +119,7 @@ h1, h2, h3, h4, h5 {
             object-fit: cover;
         }
     }
+    /* Disables comments on teaser */
     .comment-add{
         display: none;
     }
@@ -145,6 +146,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .content {
+    .title{ 
+        /* Center the title of node full view */
+        text-align: center;
+        
+        /* Underline of the title in node full view */
+        .field--name-title{
+            border-bottom: solid;
+        }
+    }
     div{
         .view-categorias, .view-content-recent, .view-related-post{
             .view-content{
@@ -195,15 +205,6 @@ h1, h2, h3, h4, h5 {
                     display: flex;
                     justify-content: center;
                 }
-            }
-        }
-        .title{ 
-            /* Center the title of node full view */
-            text-align: center;
-            
-            /* Underline of the title in node full view */
-            .field--name-title{
-                border-bottom: solid;
             }
         }
     }
