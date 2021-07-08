@@ -31,4 +31,14 @@ function darifa_form_system_theme_settings_alter(&$form, FormStateInterface $for
     'bg-white' => t('White'),
     'bg-transparent' => t('Transparent'),
   ];
+
+  $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['roboto'] = 'Roboto';
+  $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['satisfy'] = 'Satisfy';
+}
+
+function darifa_preprocess_page(&$variables)
+{
+  $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+  if ($fonts)
+    $variables['#attached']['library'][] = (in_array($fonts, ['satisfy', 'roboto']) ? 'darifa' : 'bootstrap_barrio' ) . '/' . $fonts;
 }

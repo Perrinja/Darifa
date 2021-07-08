@@ -1,0 +1,36 @@
+/* ---------- Satisfy, Roboto ---------- */
+
+h1,
+h2,
+h1 a,
+h2 a {
+  font-family: 'Satisfy', cursive;
+}
+h1,
+h1 a {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
+h2,
+h2 a {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
+h4,
+h5,
+h6 {
+  font-family: 'Satisfy', cursive;
+}
+h3,
+h3 a {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Satisfy', cursive;
+}
+body,
+p,
+a,
+li {
+  font-family: 'Roboto', sans-serif;
+}
