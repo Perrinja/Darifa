@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap');
 
-body{
-    background-color: red;
+.views-field-field-cover{
+    width: 100%;
+    object-fit: cover;
 }
 
-.nav{
-    .nav-item{
-        a{
-            font-family: 'Satisfy', cursive;  
-            color: white;
-        }
+.header{
+    a{
+        font-family: 'Satisfy', cursive;
+        color: white;
     }
 }
 
