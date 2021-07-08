@@ -3,6 +3,11 @@ body {
   background-color: red;
 }
 
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .dialog-off-canvas-main-canvas {
   font-family: 'Roboto', sans-serif;
 }
@@ -24,6 +29,10 @@ h1, h2, h3, h4, h5 {
 
 .sidebar a {
   color: black;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
 }
 
 .sidebar .block {
@@ -78,6 +87,7 @@ h1, h2, h3, h4, h5 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #505050;
+  border: 1px solid #505050;
   border-radius: 20px;
 }
 
@@ -110,6 +120,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .pagination .page-link {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   position: relative;
   display: block;
   padding: .5rem .75rem;
@@ -117,7 +129,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.25;
   color: white;
   background-color: #505050;
-  border: none;
+  border: 1px solid #505050;
 }
 
 .pagination .page-link:hover {
@@ -125,5 +137,6 @@ h1, h2, h3, h4, h5 {
   transition: 0.2s;
   color: #505050;
   background-color: white;
+  border: 1px solid #505050;
 }
 /*# sourceMappingURL=style.css.map */
