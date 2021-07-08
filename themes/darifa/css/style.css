@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap");
-.views-field-field-cover .field_content img {
-  height: 80vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 100vw;
-}
-
 .header .navbar-expand-lg {
   display: none;
 }
@@ -68,6 +61,13 @@ h1, h2, h3, h4, h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.view-content .views-row .views-field-field-cover .field_content img {
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100vw;
 }
 
 .node--view-mode-teaser {
