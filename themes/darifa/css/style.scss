@@ -8,7 +8,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
 h1, h2, h3, h4, h5 {
     font-family: 'Satisfy', cursive;    
 }
@@ -20,22 +19,37 @@ h1, h2, h3, h4, h5 {
 .sidebar_first{
     flex: 0 0 16.666667% !important;
     max-width: 16.666667% !important;
+
+    a {
+        color: black;
+    }
 }
 
-.node-readmore{
-    color: white;
-    background-color: #505050;
-    border-radius: 20px;
+.view-content{
+    justify-content: center;
 }
+
 
 .node--view-mode-teaser{
+    
+    .node .field--type-image{
+        float: none;
+    }
+    
     .node__title{
         text-align: center;
     }
-
+    
     .inline_links{
         display: flex;
         justify-content: center;
+    }
+    .node-readmore{
+        a{
+            color: white;
+        }
+        background-color: #505050;
+        border-radius: 20px;
     }
 }
 

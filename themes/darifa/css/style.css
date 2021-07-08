@@ -22,10 +22,18 @@ h1, h2, h3, h4, h5 {
   max-width: 16.666667% !important;
 }
 
-.node-readmore {
-  color: white;
-  background-color: #505050;
-  border-radius: 20px;
+.sidebar_first a {
+  color: black;
+}
+
+.view-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.node--view-mode-teaser .node .field--type-image {
+  float: none;
 }
 
 .node--view-mode-teaser .node__title {
@@ -39,5 +47,14 @@ h1, h2, h3, h4, h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.node--view-mode-teaser .node-readmore {
+  background-color: #505050;
+  border-radius: 20px;
+}
+
+.node--view-mode-teaser .node-readmore a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
