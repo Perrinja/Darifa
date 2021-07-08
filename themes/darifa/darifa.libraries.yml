@@ -29,3 +29,11 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+
+satisfy_roboto:
+  version: VERSION
+  css:
+    component: 
+    fonts/satisfy_roboto.css: {}
+    //fonts.googleapis.com/css?family=Roboto: {}
+    //fonts.googleapis.com/css2?family=Satisfy&display=swap: {}
