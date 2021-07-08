@@ -3,6 +3,12 @@ body {
   background-color: red;
 }
 
+aside .section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 a:hover {
   color: black;
   text-decoration: none;
