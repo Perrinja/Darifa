@@ -100,12 +100,29 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-.content .title{ 
-    text-align: center;
-    .field--name-title{
-        border-bottom: solid;
+.content {
+    .node--type-post{
+        .node__content{
+            .field--type-image{
+                /* Estilo para imagenes dentro del node full view */
+                .field__item{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
     }
+    .title{ 
+        /* Centrar el titulo del node full view */
+        text-align: center;
+        
+        /* Linea debajo del titulo en node full view */
+        .field--name-title{
+            border-bottom: solid;
+        }
   }
+}
+  
 
 @media (min-width: 560px){
     .node .field--type-image{
