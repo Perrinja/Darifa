@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .layout-main-wrapper {
-  padding: 10% 0;
+  padding: 0 5%;
 }
 
 .sidebar_first {
@@ -33,6 +33,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .node--view-mode-teaser .inline_links {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
