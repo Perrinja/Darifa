@@ -3,12 +3,6 @@ body {
   background-color: red;
 }
 
-aside .section {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 a:hover {
   color: black;
   text-decoration: none;
@@ -31,6 +25,12 @@ h1, h2, h3, h4, h5 {
       -ms-flex: 0 0 16.666667% !important;
           flex: 0 0 16.666667% !important;
   max-width: 16.666667% !important;
+}
+
+.sidebar aside .section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar a {
