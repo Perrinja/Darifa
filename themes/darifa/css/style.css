@@ -5,6 +5,10 @@
      object-fit: cover;
 }
 
+.header .navbar-expand-lg {
+  display: none;
+}
+
 .header a {
   font-family: 'Satisfy', cursive;
   font-size: 1.5rem;
