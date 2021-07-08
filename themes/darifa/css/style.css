@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
           justify-content: center;
 }
 
-.view-content .views-row .views-field-field-cover .field_content img {
+.view-content .views-row .views-field-field-cover .field-content img {
   height: 80vh !important;
   -o-object-fit: cover !important;
      object-fit: cover !important;
