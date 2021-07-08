@@ -286,8 +286,8 @@ satisfy_roboto:
   css:
     component: 
     fonts/satisfy_roboto.css: {}
+    //fonts.googleapis.com/css?family=Roboto: {}
     //fonts.googleapis.com/css2?family=Satisfy&display=swap: {}
-    //fonts/roboto.css: {}
 
 
 
