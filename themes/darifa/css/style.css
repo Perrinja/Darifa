@@ -117,8 +117,19 @@ h1, h2, h3, h4, h5 {
   color: #505050;
 }
 
+.content .node--type-post .node__content .field--name-field-categoria .field__item:hover .field__item:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid #505050;
+  background-color: white;
+}
+
+.content .node--type-post .node__content .field--name-field-categoria .field__item:hover .field__item:hover a {
+  color: #505050;
+}
+
 .content .node--type-post .node__content .field--type-image {
-  /* Estilo para imagenes dentro del node full view */
+  /* Style for images inside node full view */
 }
 
 .content .node--type-post .node__content .field--type-image .field__item {
@@ -131,9 +142,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .content .title {
-  /* Centrar el titulo del node full view */
+  /* Center the title of node full view */
   text-align: center;
-  /* Linea debajo del titulo en node full view */
+  /* Underline of the title in node full view */
 }
 
 .content .title .field--name-title {
