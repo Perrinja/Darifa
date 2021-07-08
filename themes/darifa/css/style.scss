@@ -252,21 +252,21 @@ h1, h2, h3, h4, h5 {
 .form-control{
     background-color: #D7D7D7 !important;
     border-radius: 20px !important;
-    padding: 10px !important;
+    padding: 3px 10px !important;
 }
 
 //Style for user account submit button
 .btn-primary{
-    transition: 0.2s;
-    color: white;
-    background-color: #505050;
-    border: 1px solid #505050;
-    border-radius: 20px;
+    transition: 0.2s !important;
+    color: white !important;
+    background-color: #505050 !important;
+    border: 1px solid #505050 !important;
+    border-radius: 20px !important;
 }
 
 .btn-primary:hover{
-    transition: 0.2s;
+    transition: 0.2s !important;
     color:#505050;
-    background-color:white;
-    border: 1px solid #505050;
+    background-color:white !important;
+    border: 1px solid #505050 !important;
 }
