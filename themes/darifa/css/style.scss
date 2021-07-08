@@ -4,6 +4,15 @@ body{
     background-color: red;
 }
 
+.navbar{
+    .navlink{
+        a{
+            font-family: 'Satisfy', cursive;  
+            color: white;
+        }
+    }
+}
+
 a:hover{
     color: black;
     text-decoration: none;
