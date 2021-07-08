@@ -112,8 +112,23 @@ h1, h2, h3, h4, h5 {
   color: #505050;
 }
 
+.content .node--type-post .node__content .field--type-image {
+  /* Estilo para imagenes dentro del node full view */
+}
+
+.content .node--type-post .node__content .field--type-image .field__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .content .title {
+  /* Centrar el titulo del node full view */
   text-align: center;
+  /* Linea debajo del titulo en node full view */
 }
 
 .content .title .field--name-title {
