@@ -32,9 +32,7 @@ h1, h2, h3, h4, h5 {
 
 .node--view-mode-teaser{
     
-    .node .field--type-image{
-        float: none;
-    }
+    
     
     .node__title{
         text-align: center;
@@ -58,3 +56,8 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media (min-width: 560px){
+    .node .field--type-image{
+        float: none !important;
+    }
+}
