@@ -15,9 +15,7 @@
 #}
 <article id="node-{{ node.id }}" class="section-{{ depth }}">
   <h1 class="book-heading">{{ title }}</h1>
+  {{ content }}
+  {{ children }}
 
-  <div style="max-width=100%;">
-    {{ content }}
-    {{ children }}
-  </div>
 </article>
