@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
     padding: 0 5%;
 }
 
-.sidebar_first, .sidebar_second{
+.sidebar{
     flex: 0 0 16.666667% !important;
     max-width: 16.666667% !important;
 
@@ -24,8 +24,9 @@ h1, h2, h3, h4, h5 {
         color: black;
     }
 
-    .block-views{
-        background-color: white;
+    .block{
+        background-color: white !important;
+        border-style: none !important;
     }
 }
 

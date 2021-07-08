@@ -15,19 +15,20 @@ h1, h2, h3, h4, h5 {
   padding: 0 5%;
 }
 
-.sidebar_first, .sidebar_second {
+.sidebar {
   -webkit-box-flex: 0 !important;
       -ms-flex: 0 0 16.666667% !important;
           flex: 0 0 16.666667% !important;
   max-width: 16.666667% !important;
 }
 
-.sidebar_first a, .sidebar_second a {
+.sidebar a {
   color: black;
 }
 
-.sidebar_first .block-views, .sidebar_second .block-views {
-  background-color: white;
+.sidebar .block {
+  background-color: white !important;
+  border-style: none !important;
 }
 
 .view-content {
