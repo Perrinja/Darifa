@@ -11,7 +11,8 @@ libraries:
 
 regions:
   header_first: 'Header First'
-  header: 'Header Second'
+  header_second: 'Header Second'
+  header: 'Header'
   header_third: 'Header Third'
   banner: 'Banner'
   content: 'Content'
