@@ -177,6 +177,12 @@ h1, h2, h3, h4, h5 {
   /* Style for Category title hover on full node view*/
 }
 
+.content .node--type-post .node__content .field--name-field-categoria .field__label, .content .node--type-post .node__content .field--name-field-palabras-clave .field__label {
+  /* Underline of the title in node full view and font family*/
+  font-family: 'Satisfy', cursive;
+  border-bottom: solid;
+}
+
 .content .node--type-post .node__content .field--name-field-categoria .field__item, .content .node--type-post .node__content .field--name-field-palabras-clave .field__item {
   display: block;
   padding: .5rem 1rem;
