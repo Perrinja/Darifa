@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5 {
     .node__title{
         text-align: center;
         a{
+            text-decoration: none;
         /* Underline of the title in node full view */
         .field--name-title{
             border-bottom: solid;
