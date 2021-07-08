@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap");
-.views-field-field-cover {
-  width: 100%;
+.views-field-field-cover .field_content img {
+  height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -13,6 +13,7 @@
 
 .header .navbar .row .block .navbar-nav .nav-item .nav-link {
   padding-left: 45vw;
+  font-size: 3rem;
 }
 
 a:hover {
