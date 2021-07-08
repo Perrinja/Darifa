@@ -6,8 +6,10 @@ body{
 
 .navbar{
     .navlink{
-        font-family: 'Satisfy', cursive;  
-        color: white;
+        a{
+            font-family: 'Satisfy', cursive;  
+            color: white;
+        }
     }
 }
 
