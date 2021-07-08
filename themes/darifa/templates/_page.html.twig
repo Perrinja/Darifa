@@ -69,245 +69,91 @@
  */
 #}
 
-{# page-container #}
-<div class="page-container">
-
-  {% if page.sidebar_first %}
-    <aside class="col-3">
-      {# sidebar-first #}
-      <section class="sidebar_first">
-        {{ page.sidebar_first }}
-      </section>
-      {# EOF:sidebar-first #}
-    </aside>
-  {% endif %}
-
-  {% if page.header_top_first or page.header_top_second or page.header_first or page.header or page.header_third or page.header_top_highlighted_first or page.header_top_highlighted_second %}
-    {# header-container #}
-    <div class="header-container">
-  
-      {% if page.header_first or page.header or page.header_third %}
-        {# header #}
-        <header role="banner" class="clearfix header {{ header_background_color }} {{ header_layout_container_class }} {{ header_layout_columns_class }}{{ (header_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (header_region_paddings) ? ' region--no-paddings' : '' }}">
-          <div class="{{ header_layout_container }}">
-            {# header__container #}
-            <div class="clearfix header__container">
-              <div class="row">
-                {% if page.header_third %}
-                  <div class="{{ header_third_grid_class }}">
-                    {# header-third #}
-                    <div class="clearfix header__section header-third">
-                      {{ page.header_third }}
-                    </div>
-                    {# EOF:header-third #}
-                  </div>
-                {% endif %}
-                {% if page.header_first %}
-                  <div class="{{ header_first_grid_class }}">
-                    {# header-first #}
-                    <div class="clearfix header__section header-first">
-                      {{ page.header_first }}
-                    </div>
-                    {# EOF:header-first #}
-                  </div>
-                {% endif %}
-                {% if page.header %}
-                  <div class="{{ header_second_grid_class }}">
-                    {# header-second #}
-                    <div class="clearfix header__section header-second">
-                      {{ page.header }}
-                    </div>
-                    {# EOF:header-second #}
-                  </div>
-                {% endif %}
-              </div>
-            </div>
-            {# EOF: header__container #}
-          </div>
-          {% if post_progress_status == "enabled" %}
-            {# post-progress #}
-            <div class="post-progress">
-              <div class="post-progress__bar"></div>
-            </div>
-            {# EOF: post-progress #}
+{% block head %}
+        {% if page.secondary_menu or page.top_header or page.top_header_form %}
+          <nav{{ navbar_top_attributes }}>
+          {% if container_navbar %}
+          <div class="container">
           {% endif %}
-        </header>
-        {# EOF: header #}
-      {% endif %}
-
-    </div>
-    {# EOF: header-container #}
-  {% endif %}
-
-  {% if page.banner %}
-    {# banner #}
-    <div class="clearfix banner {{ banner_background_color }}{{ (banner_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (banner_region_paddings) ? ' region--no-paddings' : '' }}">
-      <div class="{{ banner_layout_container }}">
-        {# banner__container #}
-        <div class="clearfix banner__container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="banner__section">
-                {{ page.banner }}
-              </div>
-            </div>
-          </div>
-        </div>
-        {# EOF: banner__container #}
-      </div>
-    </div>
-    {# EOF:banner #}
-  {% endif %}
-
- 
-  {# main-content #}
-  <div class="clearfix main-content region--dark-typography region--white-background  {{ main_content_separator }}">
-    <div class="container">
-      <div class="clearfix main-content__container">
-        <div class="row">
-          <section class="{{ main_grid_class }}">
-            {# main #}
-            <div class="clearfix main-content__section{{ (main_content_animations == "enabled") ? ' fade' : '' }}{{ (main_content_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (main_content_region_paddings) ? ' region--no-paddings' : '' }}"
-              {% if main_content_animations == "enabled" %}
-                data-animate-effect="{{ main_content_animation_effect }}"
-              {% endif %}>
-              {% if page.content %}
-                {{ page.content }}
+              {{ page.secondary_menu }}
+              {{ page.top_header }}
+              {% if page.top_header_form %}
+                <div class="form-inline navbar-form float-right">
+                  {{ page.top_header_form }}
+                </div>
               {% endif %}
-            </div>
-            {# EOF:main #}
-          </section>
-          {% if page.sidebar_first %}
-            <aside class="{{ sidebar_first_grid_class }}">
-              {# sidebar-first #}
-              <section class="sidebar__section sidebar-first clearfix{{ (sidebar_first_animations == "enabled") ? ' fade' : '' }}{{ (sidebar_first_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (sidebar_first_region_paddings) ? ' region--no-paddings' : '' }}"
-                {% if sidebar_first_animations == "enabled" %}
-                  data-animate-effect="{{ sidebar_first_animation_effect }}"
-                {% endif %}>
-                {{ page.sidebar_first }}
-              </section>
-              {# EOF:sidebar-first #}
-            </aside>
+          {% if container_navbar %}
+          </div>
           {% endif %}
-          {% if page.sidebar_second %}
-            <aside class="{{ sidebar_second_grid_class }}">
-              {# sidebar-second #}
-              <section class="sidebar__section sidebar-second clearfix{{ (sidebar_second_animations == "enabled") ? ' fade' : '' }}{{ (sidebar_second_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (sidebar_second_region_paddings) ? ' region--no-paddings' : '' }}"
-                {% if sidebar_second_animations == "enabled" %}
-                  data-animate-effect="{{ sidebar_second_animation_effect }}"
-                {% endif %}>
-                {{ page.sidebar_second }}
-              </section>
-              {# EOF:sidebar-second #}
-            </aside>
+          </nav>
+        {% endif %}
+        <nav{{ navbar_attributes }}>
+          {% if container_navbar %}
+          <div class="container">
           {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-  {# EOF:main-content #}
+            {{ page.header }}
+            {% if page.primary_menu or page.header_form %}
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                {{ page.primary_menu }}
+                {% if page.header_form %}
+                  <div class="form-inline navbar-form float-right">
+                    {{ page.header_form }}
+                  </div>
+                {% endif %}
+	          </div>
+            {% endif %}
+            {% if sidebar_collapse %}
+              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+            {% endif %}
+          {% if container_navbar %}
+          </div>
+          {% endif %}
+        </nav>
+{% endblock %}
 
-  {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth %}
-    {# footer #}
-    <footer class="clearfix footer {{ footer_background_color }} {{ footer_separator }} {{ scroll_to_top_region }}{{ (footer_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (footer_region_paddings) ? ' region--no-paddings' : '' }}">
-      {% if scroll_to_top_display and scroll_to_top_region == "footer-to-top-enabled" %}
-        <div class="to-top"><i class="fa {{ scroll_to_top_icon }}"></i></div>
-      {% endif %}
-      <div class="{{ footer_layout_container }}">
-        <div class="clearfix footer__container">
-          <div class="row">
-            {% if page.footer_first %}
-              <div class="{{ footer_first_grid_class }}">
-                {# footer-first #}
-                <div class="clearfix footer__section footer-first{{ (footer_animations == "enabled") ? ' fade' : '' }}"
-                  {% if footer_animations == "enabled" %}
-                    data-animate-effect="{{ footer_animation_effect }}"
-                  {% endif %}>
-                  {{ page.footer_first }}
-                </div>
-                {# EOF:footer-first #}
+{% block content %}
+        <div id="main" class="{{ container }}">
+          {{ page.breadcrumb }}
+          <div class="row row-offcanvas row-offcanvas-left clearfix">
+              <main{{ content_attributes }}>
+                <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+                </section>
+              </main>
+            {% if page.sidebar_first %}
+              <div{{ sidebar_first_attributes }}>
+                <aside class="section" role="complementary">
+                  {{ page.sidebar_first }}
+                </aside>
               </div>
             {% endif %}
-            {% if page.footer_second %}
-              <div class="{{ footer_second_grid_class }}">
-                {# footer-second #}
-                <div class="clearfix footer__section footer-second{{ (footer_animations == "enabled") ? ' fade' : '' }}"
-                  {% if footer_animations == "enabled" %}
-                    data-animate-effect="{{ footer_animation_effect }}"
-                  {% endif %}>
-                  {{ page.footer_second }}
-                </div>
-                {# EOF:footer-second #}
-              </div>
-            {% endif %}
-            <div class="clearfix {{ footer_4_columns_clearfix_first }}"></div>
-            {% if page.footer_third %}
-              <div class="{{ footer_third_grid_class }}">
-                {# footer-third #}
-                <div class="clearfix footer__section footer-third{{ (footer_animations == "enabled") ? ' fade' : '' }}"
-                  {% if footer_animations == "enabled" %}
-                    data-animate-effect="{{ footer_animation_effect }}"
-                  {% endif %}>
-                  {{ page.footer_third }}
-                </div>
-                {# EOF:footer-third #}
-              </div>
-            {% endif %}
-            <div class="clearfix {{ footer_4_columns_clearfix_second }} {{ footer_5_columns_clearfix }}"></div>
-            {% if page.footer_fourth %}
-              <div class="{{ footer_fourth_grid_class }}">
-                {# footer-fourth #}
-                <div class="clearfix footer__section footer-fourth{{ (footer_animations == "enabled") ? ' fade' : '' }}"
-                  {% if footer_animations == "enabled" %}
-                    data-animate-effect="{{ footer_animation_effect }}"
-                  {% endif %}>
-                  {{ page.footer_fourth }}
-                </div>
-                {# EOF:footer-fourth #}
-              </div>
-            {% endif %}
-            {% if page.footer_fifth %}
-              <div class="{{ footer_fifth_grid_class }}">
-                {# footer-fifth #}
-                <div class="clearfix footer__section footer-fifth{{ (footer_animations == "enabled") ? ' fade' : '' }}"
-                  {% if footer_animations == "enabled" %}
-                    data-animate-effect="{{ footer_animation_effect }}"
-                  {% endif %}>
-                  {{ page.footer_fifth }}
-                </div>
-                {# EOF:footer-fifth #}
+            {% if page.sidebar_second %}
+              <div{{ sidebar_second_attributes }}>
+                <aside class="section" role="complementary">
+                  {{ page.sidebar_second }}
+                </aside>
               </div>
             {% endif %}
           </div>
         </div>
-      </div>
-    </footer>
-    {# EOF footer #}
-  {% endif %}
+{% endblock %}
 
-  {% if page.footer_bottom %}
-    {# footer-bottom #}
-    <div class="clearfix footer-bottom {{ footer_bottom_background_color }} {{ footer_bottom_separator }} {{ scroll_to_top_region }}{{ (footer_bottom_blocks_paddings) ? ' region--no-block-paddings' : '' }}{{ (footer_bottom_region_paddings) ? ' region--no-paddings' : '' }}">
-      {% if scroll_to_top_display and scroll_to_top_region == "footer-bottom-to-top-enabled" %}
-        <div class="to-top"><i class="fa {{ scroll_to_top_icon }}"></i></div>
-      {% endif %}
-      <div class="{{ footer_bottom_layout_container }}">
-        {# footer-bottom__container #}
-        <div class="clearfix footer-bottom__container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="clearfix footer-bottom__section">
-                {{ page.footer_bottom }}
-              </div>
+{% block footer %}
+        <div class="{{ container }}">
+          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+            <div class="site-footer__top clearfix">
+              {{ page.footer_first }}
+              {{ page.footer_second }}
+              {{ page.footer_third }}
+              {{ page.footer_fourth }}
             </div>
-          </div>
+          {% endif %}
+          {% if page.footer_fifth %}
+            <div class="site-footer__bottom">
+              {{ page.footer_fifth }}
+            </div>
+          {% endif %}
         </div>
-        {# EOF:footer-bottom__container #}
-      </div>
-    </div>
-    {# EOF: footer-bottom #}
-  {% endif %}
-
- 
-</div>
-{# EOF: page-container #}
+{% endblock %}

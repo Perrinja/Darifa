@@ -1,9 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap');
+
 body{
     background-color: red;
 }
 
-//Style for sidebar_first region
-.sidebar_first{
-    display: flex;
-    flex-direction: column;
+.dialog-off-canvas-main-canvas {
+    font-family: 'Roboto', sans-serif;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Satisfy', cursive;    
+}
+
+.layout-main-wrapper{
+    padding: 0 5%;
+}
+
+.sidebar_first{
+    flex: 0 0 16.666667% !important;
+    max-width: 16.666667% !important;
+
+    a {
+        color: black;
+    }
+}
+
+.view-content{
+    justify-content: center;
+}
+
+
+.node--view-mode-teaser{
+    
+    .node .field--type-image{
+        float: none;
+    }
+    
+    .node__title{
+        text-align: center;
+    }
+    
+    .inline_links{
+        display: flex;
+        justify-content: center;
+    }
+    .node-readmore{
+        a{
+            color: white;
+        }
+        background-color: #505050;
+        border-radius: 20px;
+    }
+}
+
