@@ -741,6 +741,7 @@ function bootstrap_barrio_form_system_theme_settings_alter(&$form, FormStateInte
       'coustard_leckerli' => t('Coustard Ultra, Leckerli One'),
       'philosopher_muli' => t('Philosopher, Muli'),
       'vollkorn_exo' => t('Vollkorn, Exo'),
+      'satisfy_roboto' => t('Satisfy, Roboto'),
     ],
   ];
   $form['fonts']['bootstrap_icons'] = [

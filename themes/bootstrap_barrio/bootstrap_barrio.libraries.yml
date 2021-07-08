@@ -281,6 +281,16 @@ monserrat_lato:
       //fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic: {}
       //fonts.googleapis.com/css?family=Montserrat:400,700: {}
 
+satisfy_roboto:
+  version: VERSION
+  css:
+    component: 
+    fonts/satisfy_roboto.css: {}
+    //fonts.googleapis.com/css2?family=Satisfy&display=swap: {}
+    //fonts/roboto.css: {}
+
+
+
 # Colors
 
 messages_white:
