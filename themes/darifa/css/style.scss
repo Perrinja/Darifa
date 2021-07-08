@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5 {
 .content {
     .node--type-post{
         .node__content{
-            .field--name-field-categoria{
+            .field--name-field-categoria, .field--name-field-palabras-clave{
                 /* Style for Category title on full node view*/
                 .field__item{
                     display: block;
