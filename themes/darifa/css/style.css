@@ -314,4 +314,8 @@ h1, h2, h3, h4, h5 {
   background-color: white !important;
   border: 1px solid #505050 !important;
 }
+
+.nav-tabs li {
+  border-style: none;
+}
 /*# sourceMappingURL=style.css.map */
