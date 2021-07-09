@@ -92,6 +92,8 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center;
   /* Disables comments on teaser */
+  /* Style for ReadMore button on teasers */
+  /* Style for hovers on ReadMore button on teasers */
 }
 
 .node--view-mode-teaser .node__title {
@@ -172,9 +174,25 @@ h1, h2, h3, h4, h5 {
   color: black;
 }
 
+.content .node--type-post .node__content .inline__links .inline {
+  /* Disables logins/register over teaser */
+}
+
+.content .node--type-post .node__content .inline__links .inline .comment-forbidden {
+  display: none;
+}
+
 .content .node--type-post .node__content .field--name-field-categoria, .content .node--type-post .node__content .field--name-field-palabras-clave {
   /* Style for Category title on full node view*/
   /* Style for Category title hover on full node view*/
+}
+
+.content .node--type-post .node__content .field--name-field-categoria .field__label, .content .node--type-post .node__content .field--name-field-palabras-clave .field__label {
+  /* Underline of the title in node full view and font family*/
+  font-family: 'Satisfy', cursive;
+  border-bottom: solid;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .content .node--type-post .node__content .field--name-field-categoria .field__item, .content .node--type-post .node__content .field--name-field-palabras-clave .field__item {

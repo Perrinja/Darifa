@@ -130,6 +130,8 @@ h1, h2, h3, h4, h5 {
     .comment-add{
         display: none;
     }
+
+    /* Style for ReadMore button on teasers */
     .node-readmore{
         transition: 0.2s;
         background-color: #505050;
@@ -140,7 +142,7 @@ h1, h2, h3, h4, h5 {
             color: white;
         }
     }
-
+    /* Style for hovers on ReadMore button on teasers */
     .node-readmore:hover{
         transition: 0.2s;
         border: 1px solid #505050;
@@ -180,7 +182,22 @@ h1, h2, h3, h4, h5 {
     }
     .node--type-post{
         .node__content{
+            .inline__links{
+                .inline{
+                    /* Disables logins/register over teaser */
+                    .comment-forbidden{
+                        display: none;
+                    }
+                }
+            }
             .field--name-field-categoria, .field--name-field-palabras-clave{
+                .field__label{
+                    /* Underline of the title in node full view and font family*/
+                    font-family: 'Satisfy', cursive; 
+                    border-bottom: solid;
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                }
                 /* Style for Category title on full node view*/
                 .field__item{
                     display: block;
@@ -204,8 +221,6 @@ h1, h2, h3, h4, h5 {
                         }
                 }
             }
-        
-
             .field--type-image{
                 /* Style for images inside node full view */
                 .field__item{
