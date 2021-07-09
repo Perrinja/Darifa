@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5 {
   border: 1px solid #505050 !important;
 }
 
-.nav-link--user-login, .nav-link--user-register, .nav-link--user-password {
+.nav-tabs .nav-link--user-login, .nav-tabs .nav-link--user-register, .nav-tabs .nav-link--user-password {
   -webkit-transition: 0.2s !important;
   transition: 0.2s !important;
   color: white !important;
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 20px !important;
 }
 
-.nav-link--user-login, .nav-link--user-register, .nav-link--user-password:hover {
+.nav-tabs .nav-link--user-login, .nav-tabs .nav-link--user-register, .nav-tabs .nav-link--user-password:hover {
   -webkit-transition: 0.2s !important;
   transition: 0.2s !important;
   color: #505050 !important;
