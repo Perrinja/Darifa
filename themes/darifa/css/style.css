@@ -316,6 +316,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-tabs li {
-  border-style: none;
+  border-style: none !important;
 }
 /*# sourceMappingURL=style.css.map */
