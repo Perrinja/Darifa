@@ -92,7 +92,6 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center;
   /* Disables comments on teaser */
-  /* Disables logins/register over teaser */
   /* Style for ReadMore button on teasers */
   /* Style for hovers on ReadMore button on teasers */
 }
@@ -131,10 +130,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .node--view-mode-teaser .comment-add {
-  display: none;
-}
-
-.node--view-mode-teaser .comment-forbidden {
   display: none;
 }
 
@@ -177,6 +172,14 @@ h1, h2, h3, h4, h5 {
 
 .content div .view-categorias .view-content .views-row .views-field .field-content a:hover, .content div .view-content-recent .view-content .views-row .views-field .field-content a:hover, .content div .view-related-post .view-content .views-row .views-field .field-content a:hover {
   color: black;
+}
+
+.content .node--type-post .node__content .inline__links .inline {
+  /* Disables logins/register over teaser */
+}
+
+.content .node--type-post .node__content .inline__links .inline .comment-forbidden {
+  display: none;
 }
 
 .content .node--type-post .node__content .field--name-field-categoria, .content .node--type-post .node__content .field--name-field-palabras-clave {

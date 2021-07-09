@@ -130,10 +130,6 @@ h1, h2, h3, h4, h5 {
     .comment-add{
         display: none;
     }
-    /* Disables logins/register over teaser */
-    .comment-forbidden{
-        display: none;
-    }
 
     /* Style for ReadMore button on teasers */
     .node-readmore{
@@ -186,6 +182,14 @@ h1, h2, h3, h4, h5 {
     }
     .node--type-post{
         .node__content{
+            .inline__links{
+                .inline{
+                    /* Disables logins/register over teaser */
+                    .comment-forbidden{
+                        display: none;
+                    }
+                }
+            }
             .field--name-field-categoria, .field--name-field-palabras-clave{
                 .field__label{
                     /* Underline of the title in node full view and font family*/
@@ -217,8 +221,6 @@ h1, h2, h3, h4, h5 {
                         }
                 }
             }
-        
-
             .field--type-image{
                 /* Style for images inside node full view */
                 .field__item{
