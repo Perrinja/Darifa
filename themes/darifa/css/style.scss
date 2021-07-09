@@ -287,8 +287,8 @@ h1, h2, h3, h4, h5 {
     border: 1px solid #505050 !important;
 }
 
+//style for user account tabs
 .nav-tabs{
-
     .nav-link--user-login, .nav-link--user-register, .nav-link--user-password {
         transition: 0.2s !important;
         color: white !important;
@@ -296,8 +296,14 @@ h1, h2, h3, h4, h5 {
         border: 1px solid #505050 !important;
         border-radius: 20px !important;
     }
-
-    .nav-link--user-login, .nav-link--user-register, .nav-link--user-password:hover {
+    
+    .nav-link--user-login:hover, .nav-link--user-register:hover, .nav-link--user-password:hover {
+        transition: 0.2s !important;
+        color:#505050 !important;
+        background-color:white !important;
+        border: 1px solid #505050 !important;
+    }
+    .active{
         transition: 0.2s !important;
         color:#505050 !important;
         background-color:white !important;
