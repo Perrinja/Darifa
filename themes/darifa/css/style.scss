@@ -130,6 +130,12 @@ h1, h2, h3, h4, h5 {
     .comment-add{
         display: none;
     }
+    /* Disables logins/register over teaser */
+    .comment-forbidden{
+        display: none;
+    }
+
+    /* Style for ReadMore button on teasers */
     .node-readmore{
         transition: 0.2s;
         background-color: #505050;
@@ -140,7 +146,7 @@ h1, h2, h3, h4, h5 {
             color: white;
         }
     }
-
+    /* Style for hovers on ReadMore button on teasers */
     .node-readmore:hover{
         transition: 0.2s;
         border: 1px solid #505050;
